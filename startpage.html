@@ -10,8 +10,7 @@ Inspired By Solarized Dark ColorScheme
 <title>Home</title>
 <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
 <body>
-	
-
+	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
 	<script>			
 		window.onkeyup = keyup;
 		var inputTextValue;
@@ -49,8 +48,10 @@ Inspired By Solarized Dark ColorScheme
 		<input id="search_bar", style="search", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
 	</div>
 	
-	<div id="icons">
-		<i class="github"></i>
+	<div id="icons", style="font-size:48px">
+		<i id="github", class="fa fa-github", onclick="Javascript: window.location = 'https://github.com/NerdyPepper'"></i>
+		<i id="gplus", class="fa fa-google-plus-circle", onclick="Javascript: window.location = 'https://plus.google.com'"></i>
+		<i id="twitter", class="fa fa-twitter", onclick="Javascript: window.location = 'https://twitter.com'"></i>
 	</div>
 	
 	
@@ -276,4 +277,35 @@ Inspired By Solarized Dark ColorScheme
 	#big_g {
 		height: 100px;
 		margin-top: 50px;
+	}
+	
+	#icons {
+		position: center;
+		font-family: 'NovaMono', sans-serif;
+		text-align: center;
+		color: #93a1a1;
+		font-size: 12px;
+		padding: 30px;
+		background: #002b36;
+	}
+	
+	#github ,#gplus, #twitter{
+		background-color: #002b36;
+		color: var(--foreground-light);
+		transition: 0.5s ease;
+	}
+	
+	#github:hover {
+		color: var(--violet);
+		transition: 0.5s ease;
+	}
+	
+	#gplus:hover {
+		color: var(--red);
+		transition: 0.5s ease;
+	}
+
+	#twitter:hover {
+		color: var(--blue);
+		transition: 0.5s ease;
 	}
