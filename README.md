@@ -7,4 +7,6 @@ Not a single image is used, so as to speed up load times.
 
 Inspired by the Solarized Dark color scheme.
 
+Link to Solarized Dark Startpage: 
+
 ![ScreenShots](Startpage.png)
