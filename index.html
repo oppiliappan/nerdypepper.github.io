@@ -1,11 +1,3 @@
-<!--
-Minimal Startpage for Chrome/Firefox
-Incompatible with Safari/IE8
-Inspired By Solarized Dark ColorScheme
-					--By-NerdyPepper
--->
-
-
 <!doctype html>
 <title>Home</title>
 <head><link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
@@ -23,7 +15,7 @@ Inspired By Solarized Dark ColorScheme
 	</script>
 
 	
-	<div id="top_bar">
+<!--	<div id="top_bar">
 		<a id="youtube", href="https://www.youtube.com">youtube</a>
 		<a id="dota2", href="https://www.reddit.com/r/DotA2">r/DotA2</a>
 		<a id="android", href="https://www.reddit.com/r/androidthemes">r/androidthemes</a>
@@ -32,7 +24,7 @@ Inspired By Solarized Dark ColorScheme
 		<a id="wiki", href="https://wikipedia.com">wikipedia</a>
 		<a id="rice", href="https://www.reddit.com/r/unixporn">r/unixporn</a>
 		<a id="xda", href="https://xda-developers.com">xda</a>
-	</div>
+</div>-->
 	
 	<div id="logo">
 		<!--Uses text and not an image to speed things up -->
@@ -53,17 +45,15 @@ Inspired By Solarized Dark ColorScheme
 		<i id="gplus", class="fa fa-google-plus-square", onclick="Javascript: window.location = 'https://plus.google.com'"></i>
 		<i id="twitter", class="fa fa-twitter-square", onclick="Javascript: window.location = 'https://twitter.com'"></i>
         <i id="facebook", class="fa fa-facebook-square", onclick="Javascript: window.location = 'https://facebook.com'"></i>
+        <i id="reddit", class="fa fa-reddit-square", onclick="Javascript:window.location = 'https://reddit.com'"></i>
+        <i id="mail", class="fa fa-envelope-square", onclick="Javascript:window.location = 'https://inbox.google.com'"></i>
+        <i id="youtube", class="fa fa-youtube-square", onclick="Javascript:window.location = 'https://youtube.com'"></i>
 	</div>
 	
 	
 	
 	</body>
 </head>
-
-
-
-
-
 
 <style type = "text/css">
 	
@@ -101,9 +91,10 @@ Inspired By Solarized Dark ColorScheme
 		background-color: var(--main-color);
 		text-align: center;
 		margin: 0;
+        padding-top: 80px;
 	}
 		
-	#top_bar {
+/*	#top_bar {
 		position: center;
 		font-family: 'Meslo LG M', monospace;
 		text-align: center;
@@ -251,7 +242,7 @@ Inspired By Solarized Dark ColorScheme
 		background-color: var(--yellow);
 		color: var(--white);
 		transition: 0.5s ease;
-	}
+	} */
 	
 	input {
 		font-family: 'Meslo LG M', monospace;
@@ -264,23 +255,23 @@ Inspired By Solarized Dark ColorScheme
 		height: 20px;
 		font-size: 14px;
 		padding : 8px;
-		box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
+		box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.3);
 		position: relative;
 		transition: 0.2s ease;
 	}
 		
 	input:focus {
-		box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.2);
+		box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.3);
 	}
 		
 	input:hover {
-		box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.2);
+		box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.3);
 	}
 	
 	#logo {
 		margin-top: 50px;
 		font-family: 'Meslo LG M', monospace;
-		font-size: 50px;
+		font-size: 70px;
 		text-align: center;
 		padding: 50px;	
 		animation-name: rise;
@@ -316,17 +307,18 @@ Inspired By Solarized Dark ColorScheme
 		user-select: none;
 	}
 	
-	#github ,#gplus, #twitter, #facebook {
+	#github ,#gplus, #twitter, #facebook, #reddit, #mail, #youtube {
 		background-color: var(--main-color);
 		color: var(--main-muted);
 		transition: 0.5s ease;
 	}
 	
+	
 	#github:hover {
 		color: var(--yellow);
 		transition: 0.5s ease;
 	}
-	
+
 	#gplus:hover {
 		color: var(--red);
 		transition: 0.5s ease;
@@ -341,3 +333,18 @@ Inspired By Solarized Dark ColorScheme
         color: var(--blue);
         transition: 0.5s ease;
     }
+
+	#reddit:hover {
+		color: var(--orange);
+		transition: 0.5s ease;
+	}
+
+	#mail:hover {
+		color: var(--blue);
+		transition: 0.5s ease;
+	}
+
+	#youtube:hover {
+		color: var(--red);
+		transition: 0.5s ease;
+	}
