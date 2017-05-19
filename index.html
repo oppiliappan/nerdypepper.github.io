@@ -59,7 +59,7 @@
 	
 	:root {
 		--main-color: #292a44;
-		--main-muted: #aaaaaa;
+		--main-muted: #3c3a61;
 		--green: #2de087;
 		--orange: #e88e2c;
 		--red: #e72d2d;
@@ -70,7 +70,7 @@
 		--violet: #f92672;
 		--yellow: #ffdb7d;
 		--foreground-light: #678bdc;
-		--white: #222222;
+		--white: #eeeeee;
 	}
 	
     @font-face {
@@ -88,7 +88,11 @@
 	}
 	
 	body {
-		background-color: var(--main-color);
+		background-image: url("gloomified.png");
+        background-position: center;
+        background-repeat: repeat-x;
+        background-size: 1366px 854px;
+        background-attachment: fixed;
 		text-align: center;
 		margin: 0;
         padding-top: 80px;
@@ -96,7 +100,7 @@
 		
 /*	#top_bar {
 		position: center;
-		font-family: 'Meslo LG M', monospace;
+		font-family: 'SFNS Display', monospace;
 		text-align: center;
 		color: #dc322f;
 		font-size: 12px;
@@ -245,9 +249,9 @@
 	} */
 	
 	input {
-		font-family: 'Meslo LG M', monospace;
+		font-family: 'SFNS Display', monospace;
 		text-align: center;
-		color: var(--main-muted);
+		color: var(--white);
 		background-color: var(--main-color);
 		border: 2px solid var(--main-color);
 		border-radius: 3px;
@@ -270,7 +274,7 @@
 	
 	#logo {
 		margin-top: 50px;
-		font-family: 'Meslo LG M', monospace;
+		font-family: 'SFNS Display', monospace;
 		font-size: 70px;
 		text-align: center;
 		padding: 50px;	
@@ -297,7 +301,7 @@
 		color: var(--main-muted);
 		font-size: 12px;
 		padding: 30px;
-		background: var(--main-color);
+		background: rgba(0,0,0,0);
 		
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
@@ -308,7 +312,7 @@
 	}
 	
 	#github ,#gplus, #twitter, #facebook, #reddit, #mail, #youtube {
-		background-color: var(--main-color);
+		background-color: rgba(0,0,0,0);
 		color: var(--main-muted);
 		transition: 0.5s ease;
 	}
