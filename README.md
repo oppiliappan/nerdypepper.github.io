@@ -6,14 +6,14 @@ A collection of my startpages.
 Not a single image is used, so as to speed up load times.
 
 
-Link to Solarized Dark Startpage: https://nerdypepper.github.io/startpage.html
+Link to Solarized Dark Startpage: https://nerdypepper.github.io/Solarized Dark/startpage.html
 
-Link to Gloom Startpage: https://nerdypepper.github.io/
+Link to Gloom Startpage: https://nerdypepper.github.io/Gloom/
 
-Link to Tokyo-Grey Startpage: https://nerdypepper.github.io/tokyo-grey.html
+Link to Tokyo-Grey Startpage: https://nerdypepper.github.io/Tokyo-Grey/tokyo-grey.html
 
-![ScreenShots](Startpage.png)
+![ScreenShots](Images/Startpage.png)
 
-![Screenshots](Gloom.png)
+![Screenshots](Images/Gloom.png)
 
-![Screenshots](Tokyo-Grey.png)
+![Screenshots](Images/Tokyo-Grey.png)
