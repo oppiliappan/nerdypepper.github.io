@@ -32,7 +32,7 @@
 		
 	#top_bar {
 		position: center;
-		font-family: 'SFNS Display', monospace;
+		font-family: 'Product Sans', monospace;
 		text-align: center;
 		color: #dc322f;
 		font-size: 12px;
@@ -181,7 +181,7 @@
 	} 
 	
 	input {
-		font-family: 'SFNS Display', monospace;
+		font-family: 'Product Sans', monospace;
 		text-align: center;
 		color: var(--white);
 		background-color: var(--main-color);
@@ -206,13 +206,12 @@
 	
 	#logo {
 		margin-top: 50px;
-		font-family: 'SFNS Display', monospace;
-		font-size: 70px;
+		font-family: 'Product Sans', monospace;
+		font-size: 80px;
 		text-align: center;
 		padding: 50px;	
-		animation-name: rise;
-		animation-duration: 0.5s;
-		animation-iteration: 1;
+        color: var(--main-muted);
+
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
 		-khtml-user-select: none;
@@ -228,10 +227,10 @@
 	
 	#icons {
 		position: center;
-		font-family: 'Monaco', sans-serif;
+		font-family: 'Product Sans', sans-serif;
 		text-align: center;
 		color: var(--main-muted);
-		font-size: 12px;
+		font-size: 10px;
 		padding: 30px;
 		background: rgba(0,0,0,0);
 		
@@ -243,45 +242,68 @@
 		user-select: none;
 	}
 	
-	#github ,#gplus, #twitter, #facebook, #reddit, #mail, #youtube {
+	#github ,#gplus, #twitter, #facebook, #mail {
 		background-color: rgba(0,0,0,0);
 		color: var(--main-muted);
 		transition: 0.5s ease;
+        border: 2px solid;
+        border-radius: 100px;
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+        line-height: 45px;
 	}
+
+    #github {
+        border-color: var(--violet);
+    }
+
+    #gplus {
+        border-color: var(--red);
+    }
+
+    #twitter {
+        border-color: var(--cyan);
+    }
+
+    #facebook {
+        border-color: var(--blue);
+    }
+
+    #mail {
+        border-color: var(--yellow);
+    }
 
 	
 	#github:hover {
-		color: var(--magenta);
+		background-color: var(--violet);
 		transition: 0.5s ease;
+        color: var(--white);
 	}
 
 	#gplus:hover {
-		color: var(--red);
+		background-color: var(--red);
 		transition: 0.5s ease;
+        color: var(--white);
 	}
 
 	#twitter:hover {
-		color: var(--cyan);
+		background-color: var(--cyan);
 		transition: 0.5s ease;
+        color: var(--white);
 	}
 
     #facebook:hover {
-        color: var(--blue);
+        background-color: var(--blue);
         transition: 0.5s ease;
+        color: var(--white);
     }
 
-	#reddit:hover {
-		color: var(--orange);
-		transition: 0.5s ease;
-	}
-
 	#mail:hover {
-		color: var(--yellow);
+		background-color: var(--yellow);
 		transition: 0.5s ease;
+        color: var(--white);
 	}
 
-	#youtubei:hover {
-		color: var(--red);
-		transition: 0.5s ease;
-	}
+	
 
