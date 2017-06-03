@@ -6,7 +6,7 @@ A collection of my startpages.
 Not a single image is used, so as to speed up load times.
 
 
-Link to Solarized Dark Startpage: https://nerdypepper.github.io/Solarized Dark/startpage.html
+Link to Solarized Dark Startpage: https://nerdypepper.github.io/Solarized%20Dark/startpage.html
 
 Link to Gloom Startpage: https://nerdypepper.github.io/Gloom/
 
