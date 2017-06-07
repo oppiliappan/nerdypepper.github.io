@@ -1,15 +1,15 @@
 	
 	:root {
-		--main-color: #1e1e20;
+		--main-color: #111112;
 		--main-muted: #aaaaaa;
-		--green: #a3be8c;
+		--green: #87be57;
 		--orange: #ebcb8b;
-		--red: #bf616a;
+		--red: #bf4752;
 		--cyan: #88c0d0;
 		--blue: #81A1C1;
 		--magenta: #b48ead;
 		--violet: #734473;
-		--yellow: #ebcb8b;
+		--yellow: #ebb342;
 		--foreground-light: #aaaaaa;
 		--white: #ffffff;
 	}
@@ -31,6 +31,7 @@
 	}
 		
 	#top_bar {
+        display: none;
 		position: center;
 		font-family: 'Product Sans', monospace;
 		text-align: center;
@@ -205,7 +206,7 @@
 	}
 	
 	#logo {
-		margin-top: 50px;
+		margin-top: 100px;
 		font-family: 'Product Sans', monospace;
 		font-size: 80px;
 		text-align: center;
@@ -242,7 +243,7 @@
 		user-select: none;
 	}
 	
-	#github ,#gplus, #twitter, #facebook, #mail {
+	#github ,#gplus, #twitter, #facebook, #mail, #reddit {
 		background-color: rgba(0,0,0,0);
 		color: var(--main-muted);
 		transition: 0.5s ease;
@@ -274,6 +275,10 @@
         border-color: var(--yellow);
     }
 
+    #reddit {
+        border-color: var(--red);
+    }
+
 	
 	#github:hover {
 		background-color: var(--violet);
@@ -281,7 +286,7 @@
         color: var(--white);
 	}
 
-	#gplus:hover {
+	#gplus:hover , #reddit:hover {
 		background-color: var(--red);
 		transition: 0.5s ease;
         color: var(--white);
@@ -305,5 +310,33 @@
         color: var(--white);
 	}
 
-	
+.icon-arrow-down:before {
+  content: "\e900";
+  color: #000;
+}
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?4rcyt');
+  src:  url('fonts/icomoon.eot?4rcyt#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?4rcyt') format('truetype'),
+    url('fonts/icomoon.woff?4rcyt') format('woff'),
+    url('fonts/icomoon.svg?4rcyt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
