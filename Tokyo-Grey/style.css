@@ -1,4 +1,3 @@
-	
 	:root {
 		--main-color: #111112;
 		--main-muted: #aaaaaa;
@@ -13,6 +12,10 @@
 		--foreground-light: #aaaaaa;
 		--white: #ffffff;
 	}
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 	
 	@keyframes rise {
 		0% {opacity:0;}
@@ -73,102 +76,102 @@
 		text-decoration: none;
 		border: 2px solid var(--orange);
 		margin: 5px;
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 	} 
 	
 	#dota2 {
 		text-decoration: none;
 		border:2px solid var(--red);
 		margin: 5px;
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 	} 
 	
 	#android {
 		text-decoration: none;
 		border:2px solid var(--violet);
 		margin: 5px;
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 	} 
 	
 	#jokes {
 		text-decoration: none;
 		border:2px solid var(--magenta);
 		margin: 5px;
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 	} 
 	
 	#archlinux {
 		text-decoration: none;
 		border:2px solid var(--blue); 
 		margin: 5px;
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 	}
 	
 	#wiki {
 		text-decoration: none;
 		border:2px solid var(--cyan);
 		margin: 5px;	
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 	}
 	
 	#rice {
 		text-decoration: none;
 		border:2px solid var(--green);	
 		margin: 5px;
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 	}
 	
 	#xda {
 		text-decoration: none;
 		border:2px solid var(--yellow);	
 		margin: 5px;
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 	}
 	
 	#youtube:hover {
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 		text-decoration: none;
 		background-color: var(--orange);
 		color: var(--white);
 	} 
 	
 	#dota2:hover {
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 		text-decoration: none;
 		background-color: var(--red);
 		color: var(--white);
 	} 
 	
 	#android:hover {
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 		text-decoration: none;
 		background-color: var(--violet);
 		color: var(--white);
 	} 
 	
 	#jokes:hover {
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 		text-decoration: none;
 		background-color: var(--magenta);
 		color: var(--white);
 	} 
 	
 	#archlinux:hover {
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 		text-decoration: none;
 		background-color: var(--blue);
 		color: var(--white);
 	}
 	
 	#wiki:hover {
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 		text-decoration: none;
 		background-color: var(--cyan);	
 		color: var(--white);
 	}
 	
 	#rice:hover {
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 		text-decoration: none;
 		background-color: var(--green);	
 		color: var(--white);
@@ -178,7 +181,7 @@
 		text-decoration: none;
 		background-color: var(--yellow);
 		color: var(--white);
-		transition: 0.5s ease;
+		transition: 0.25s ease;
 	} 
 	
 	input {
@@ -246,7 +249,7 @@
 	#github ,#gplus, #twitter, #facebook, #mail, #reddit {
 		background-color: rgba(0,0,0,0);
 		color: var(--main-muted);
-		transition: 0.5s ease;
+		transition: 0.25s ease;
         border: 2px solid;
         border-radius: 100px;
         width: 45px;
@@ -282,31 +285,31 @@
 	
 	#github:hover {
 		background-color: var(--violet);
-		transition: 0.5s ease;
+		transition: 0.25s ease;
         color: var(--white);
 	}
 
 	#gplus:hover , #reddit:hover {
 		background-color: var(--red);
-		transition: 0.5s ease;
+		transition: 0.25s ease;
         color: var(--white);
 	}
 
 	#twitter:hover {
 		background-color: var(--cyan);
-		transition: 0.5s ease;
+		transition: 0.25s ease;
         color: var(--white);
 	}
 
     #facebook:hover {
         background-color: var(--blue);
-        transition: 0.5s ease;
+        transition: 0.25s ease;
         color: var(--white);
     }
 
 	#mail:hover {
 		background-color: var(--yellow);
-		transition: 0.5s ease;
+		transition: 0.25s ease;
         color: var(--white);
 	}
 
