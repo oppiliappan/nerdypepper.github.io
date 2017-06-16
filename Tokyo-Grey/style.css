@@ -247,10 +247,8 @@
 	}
 	
 	#github ,#gplus, #twitter, #facebook, #mail, #reddit {
-		background-color: rgba(0,0,0,0);
-		color: var(--main-muted);
+		color: var(--main-color);
 		transition: 0.25s ease;
-        border: 2px solid;
         border-radius: 100px;
         width: 45px;
         height: 45px;
@@ -259,59 +257,33 @@
 	}
 
     #github {
-        border-color: var(--violet);
+        background-color: var(--violet);
     }
 
     #gplus {
-        border-color: var(--red);
+        background-color: var(--red);
     }
 
     #twitter {
-        border-color: var(--cyan);
+        background-color: var(--cyan);
     }
 
     #facebook {
-        border-color: var(--blue);
+        background-color: var(--blue);
     }
 
     #mail {
-        border-color: var(--yellow);
+        background-color: var(--yellow);
     }
 
     #reddit {
-        border-color: var(--red);
+        background-color: var(--green);
     }
 
-	
-	#github:hover {
-		background-color: var(--violet);
-		transition: 0.25s ease;
-        color: var(--white);
+	#github:hover, #twitter:hover, #facebook:hover, #mail:hover, #gplus:hover , #reddit:hover {
+        filter: opacity(0.6);
 	}
 
-	#gplus:hover , #reddit:hover {
-		background-color: var(--red);
-		transition: 0.25s ease;
-        color: var(--white);
-	}
-
-	#twitter:hover {
-		background-color: var(--cyan);
-		transition: 0.25s ease;
-        color: var(--white);
-	}
-
-    #facebook:hover {
-        background-color: var(--blue);
-        transition: 0.25s ease;
-        color: var(--white);
-    }
-
-	#mail:hover {
-		background-color: var(--yellow);
-		transition: 0.25s ease;
-        color: var(--white);
-	}
 
 .icon-arrow-down:before {
   content: "\e900";
