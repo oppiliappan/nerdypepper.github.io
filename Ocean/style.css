@@ -7,7 +7,7 @@
 		--cyan: #96b5b4;
 		--blue: #8fa1b3;
 		--magenta: #b48ead;
-		--violet: #ab7967;
+		--violet: #96b5b4;
 		--yellow: #ebb342;
 		--foreground-light: #657e7e;
 		--white: #ffffff;
@@ -246,7 +246,7 @@
 		user-select: none;
 	}
 	
-	#github ,#gplus, #twitter, #facebook, #mail, #reddit {
+	#github ,#gplus, #twitter, #facebook, #mail, #reddit, #you {
 		color: var(--main-color);
 		transition: 0.25s ease;
         border-radius: 100px;
@@ -257,10 +257,10 @@
 	}
 
     #github {
-        background-color: var(--violet);
+        background-color: var(--blue);
     }
 
-    #gplus {
+    #gplus, #you {
         background-color: var(--red);
     }
 
@@ -280,7 +280,7 @@
         background-color: var(--green);
     }
 
-	#github:hover, #twitter:hover, #facebook:hover, #mail:hover, #gplus:hover , #reddit:hover {
+	#github:hover, #twitter:hover, #facebook:hover, #mail:hover, #gplus:hover , #reddit:hover, #you:hover {
         filter: opacity(0.6);
 	}
 
