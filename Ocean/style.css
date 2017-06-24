@@ -28,7 +28,7 @@
 	}
 	
 	body {
-		background-color: var(--main-color);
+        background-color: var(--main-color);
         text-align: center;
 		margin: 0;
 	}
