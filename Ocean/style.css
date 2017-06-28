@@ -1,5 +1,5 @@
 	:root {
-		--main-color: #102027;
+		--main-color: #212B30;
 		--main-muted: #c0c5ce;
 		--green: #a3be8c;
 		--orange: #b48ead;
@@ -190,7 +190,7 @@
 		color: var(--white);
 		background-color: var(--main-color);
 		border: 2px solid #434D61;
-		border-radius: 3px;
+		border-radius: 100px;
 		width: 42%;
 		height: 20px;
 		font-size: 14px;
