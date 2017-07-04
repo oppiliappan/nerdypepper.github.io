@@ -23,3 +23,5 @@ OneDark: https://nerdypepper.github.io/OneDark/
 ![Screenshots](Images/Tokyo-Grey.png)
 
 ![Screenshots](Images/Ocean.png)
+
+![Screenshots](Images/OneDark.png)
