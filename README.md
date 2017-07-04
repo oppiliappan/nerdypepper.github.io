@@ -12,6 +12,10 @@ Link to Gloom Startpage: https://nerdypepper.github.io/Gloom/
 
 Link to Tokyo-Grey Startpage: https://nerdypepper.github.io/Tokyo-Grey/
 
+Link to Ocean Startpage: https://nerdypepper.github.io/Ocean/
+
+Link to OneDark Startpage: https://nerdypepper.github.io/OneDark/
+
 ![ScreenShots](Images/Startpage.png)
 
 ![Screenshots](Images/Gloom.png)
