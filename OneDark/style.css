@@ -190,7 +190,7 @@
 	} 
 	
 	input {
-		font-family: 'Product Sans', monospace;
+		font-family: sans-serif;
 		text-align: center;
 		color: var(--white);
 		background-color: var(--main-color);
