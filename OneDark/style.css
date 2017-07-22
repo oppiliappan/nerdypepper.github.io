@@ -190,7 +190,7 @@
 	} 
 	
 	input {
-		font-family: sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		text-align: center;
 		color: var(--white);
 		background-color: var(--main-color);
@@ -198,7 +198,7 @@
 		border-radius: 100px;
 		width: 40%;
 		height: 20px;
-		font-size: 14px;
+		font-size: 12px;
 		padding : 8px;
 		box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
 		position: relative;
@@ -207,6 +207,7 @@
 		
 	input:focus {
 		border: 2px solid var(--foreground-light);
+		outline: 0;
 	}
 		
 	input:hover {
@@ -321,6 +322,3 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-input:focus{
-    outline:0;
-}

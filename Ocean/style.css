@@ -202,10 +202,12 @@
 		
 	input:focus {
 		border: 2px solid var(--foreground-light);
+		outline: 0;
 	}
 		
 	input:hover {
 		border: 2px solid var(--foreground-light);
+		outline: 0;
 	}
 	
 	#logo {
@@ -315,3 +317,4 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
