@@ -27,10 +27,10 @@
 		to {opacity:1;}
 	}
 
-@font-face {
-	font-family: 'Product Sans';
-	src: url('ProductSans.ttf');
-}
+    @font-face {
+ 		font-family: 'Product Sans';
+		src: url('ProductSans.ttf');
+	}	
 	
 	body {
         background-color: var(--main-color);
