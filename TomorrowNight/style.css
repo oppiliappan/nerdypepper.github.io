@@ -1,14 +1,14 @@
 	:root {
 		--main-color: #111111;
 		--main-muted: #555555;
-		--green: #87be57;
-		--orange: #ebcb8b;
-		--red: #58dd8f;
-		--cyan: #88c0d0;
-		--blue: #4de8d8;
-		--magenta: #b48ead;
-		--violet: #734473;
-		--yellow: #8abeb7;
+		--green: #b5bd68;
+		--orange: #b5bd68;
+		--red: #cc6666;
+		--cyan: #b5bd68;
+		--blue: #81a2be;
+		--magenta: #b5bd68;
+		--violet: #b5bd68;
+		--yellow: #f0c674;
 		--foreground-light: #aaaaaa;
 		--white: #ffffff;
 	}
