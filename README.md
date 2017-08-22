@@ -1,4 +1,4 @@
-# NerdyPepper.github.io
+# nerdypepper.github.io
 GitHub page for My Startpage
 
 A collection of startpages based on popular colorschemes.
