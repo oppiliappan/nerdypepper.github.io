@@ -41,7 +41,10 @@
 	</div>
 
 	<div>
-		<input id="search_bar" style="search" type="text" spellcheck="false" onKeydown="Javascript: if (event.keyCode == 13) search();", onfocus="woosh()">
+		<input id="search_bar" style="search" type="text" spellcheck="false" onKeydown="Javascript: if (event.keyCode == 13) search();",
+		onfocus="document.getElementById('search_bar').style.transform = 'translate(0, -280px)'; document.getElementById('logo').style.visibility = 'hidden'; document.getElementById('icons').style.transform = 'translate(0, -280px)' "
+		onblur ="document.getElementById('search_bar').style.transform = 'translate(0, 0px)'; document.getElementById('logo').style.visibility = 'visible';  document.getElementById('icons').style.transform = 'translate(0, 0px)'"
+		>
 	</div>
 
 	<div id="icons", style="font-size:24px">
