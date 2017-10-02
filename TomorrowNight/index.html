@@ -1,14 +1,17 @@
 <!doctype html>
+
 <title>Home</title>
 <body>
 	<head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     </head>
-	<script>			
+	<script>
 		window.onkeyup = keyup;
 		var inputTextValue;
+		var logo = document.getElementById("logo");
+		var icons = document.getElementById("icons");
 		function keyup(e) {
 			inputTextValue = e.target.value;
 			if (e.keyCode == 13) {
@@ -17,7 +20,7 @@
 		}
 	</script>
 
-	
+
 	<div id="top_bar">
 		<a id="youtube", href="https://www.youtube.com">youtube</a>
 		<a id="dota2", href="https://www.reddit.com/r/DotA2">r/DotA2</a>
@@ -25,8 +28,8 @@
 		<a id="wiki", href="https://wikipedia.com">wikipedia</a>
 		<a id="rice", href="https://www.reddit.com/r/unixporn">r/unixporn</a>
 		<a id="xda", href="https://xda-developers.com">xda</a>
-</div>
-	
+	</div>
+
 	<div id="logo">
 		<!--Uses text and not an image to speed things up -->
 		<span style="color: var(--blue)">G</span>
@@ -36,11 +39,14 @@
 		<span style="color: var(--green);)">l</span>
 		<span style="color: var(--red);)">e</span>
 	</div>
-	
+
 	<div>
-		<input id="search_bar", style="search", type="text", spellcheck="false", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
+		<input id="search_bar" style="search" type="text" spellcheck="false" onKeydown="Javascript: if (event.keyCode == 13) search();",
+		onfocus="document.getElementById('search_bar').style.transform = 'translate(0, -280px)'; document.getElementById('logo').style.visibility = 'hidden'; document.getElementById('icons').style.transform = 'translate(0, -280px)' "
+		onblur ="document.getElementById('search_bar').style.transform = 'translate(0, 0px)'; document.getElementById('logo').style.visibility = 'visible';  document.getElementById('icons').style.transform = 'translate(0, 0px)'"
+		>
 	</div>
-	
+
 	<div id="icons", style="font-size:24px">
 		<i id="github", class="fa fa-github-alt", onclick="Javascript: window.location = 'https://github.com/NerdyPepper'"></i>
 		<i id="gplus", class="fa fa-google-plus", onclick="Javascript: window.location = 'https://plus.google.com'"></i>

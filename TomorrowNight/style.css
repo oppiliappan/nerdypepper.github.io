@@ -17,16 +17,6 @@
         display: none;
     }
 
-	@keyframes rise {
-		0% {opacity:0;}
-		100% {opacity:1;}
-	}
-
-	@keyframes fadein {
-		from {opacity:0.3;}
-		to {opacity:1;}
-	}
-
     @font-face {
  		font-family: 'Product Sans';
 		src: url('ProductSans.ttf');
@@ -192,7 +182,7 @@
 	input {
 		font-family: 'Open Sans', sans-serif;
 		text-align: center;
-		color: var(--white);
+		color: var(--black);
 		background-color: var(--main-color);
 		border: 2px solid var(--main-muted);
 		border-radius: 100px;
@@ -206,12 +196,13 @@
 	}
 
 	input:focus {
-		border: 2px solid var(--foreground-light);
 		outline: 0;
+		background-color: var(--white);
+		border: 2px solid var(--white);
 	}
 
 	input:hover {
-		border: 2px solid var(--foreground-light);
+		border: 2px solid var(--white);
 	}
 
 	#logo {
@@ -250,6 +241,8 @@
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
+
+		transition: 0.2s ease;
 	}
 
 	#github ,#gplus, #twitter, #facebook, #mail, #reddit, #you {
@@ -290,34 +283,3 @@
         filter: opacity(0.6);
 	}
 
-
-.icon-arrow-down:before {
-  content: "\e900";
-  color: #000;
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?4rcyt');
-  src:  url('fonts/icomoon.eot?4rcyt#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?4rcyt') format('truetype'),
-    url('fonts/icomoon.woff?4rcyt') format('woff'),
-    url('fonts/icomoon.svg?4rcyt#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
