@@ -1,285 +1,285 @@
-	:root {
-		--main-color: #111111;
-		--main-muted: #555555;
-		--green: #B8BB26;
-		--orange: #b5bd68;
-		--red: #fb4934;
-		--cyan: #8EC07C;
-		--blue: #83A598;
-		--magenta: #b5bd68;
-		--violet: #D3869B;
-		--yellow: #FABD2F;
-		--foreground-light: #D5C4A1;
-		--white: #EBDBB2;
-	}
+:root {
+	--main-color: #111111;
+	--main-muted: #555555;
+	--green: #B8BB26;
+	--orange: #b5bd68;
+	--red: #fb4934;
+	--cyan: #8EC07C;
+	--blue: #83A598;
+	--magenta: #b5bd68;
+	--violet: #D3869B;
+	--yellow: #FABD2F;
+	--foreground-light: #D5C4A1;
+	--white: #EBDBB2;
+}
 
-    ::-webkit-scrollbar {
-        display: none;
-    }
+::-webkit-scrollbar {
+	display: none;
+}
 
-    @font-face {
- 		font-family: 'Product Sans';
-		src: url('ProductSans.ttf');
-	}
+@font-face {
+	font-family: 'Product Sans';
+	src: url('ProductSans.ttf');
+}
 
-	body {
-        background-color: var(--main-color);
-        text-align: center;
-		margin: 0;
-	}
+body {
+	background-color: var(--main-color);
+	text-align: center;
+	margin: 0;
+}
 
-	#top_bar {
-        display: none;
-		position: center;
-		font-family: 'Product Sans', monospace;
-		text-align: center;
-		color: #dc322f;
-		font-size: 12px;
-		padding: 30px;
-		border: 5px solid var(--main-color);
-		background: var(--main-color);
-		box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+#top_bar {
+	display: none;
+	position: center;
+	font-family: 'Product Sans', monospace;
+	text-align: center;
+	color: #dc322f;
+	font-size: 12px;
+	padding: 30px;
+	border: 5px solid var(--main-color);
+	background: var(--main-color);
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
 
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 
-	a:link , a:visited{
-		text-decoration: none;
-		color: var(--main-muted);
-		background-color:var(--main-color);
-		border-style: 2px solid;
-		border-radius: 3px;
-		padding: 8px;
-		width: 200px;
-		height: 100px;
+a:link , a:visited{
+	text-decoration: none;
+	color: var(--main-muted);
+	background-color:var(--main-color);
+	border-style: 2px solid;
+	border-radius: 3px;
+	padding: 8px;
+	width: 200px;
+	height: 100px;
 
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 
-	}
+}
 
-	#youtube{
-		text-decoration: none;
-		border: 2px solid var(--orange);
-		margin: 5px;
-		transition: 0.25s ease;
-	}
+#youtube{
+	text-decoration: none;
+	border: 2px solid var(--orange);
+	margin: 5px;
+	transition: 0.25s ease;
+}
 
-	#dota2 {
-		text-decoration: none;
-		border:2px solid var(--red);
-		margin: 5px;
-		transition: 0.25s ease;
-	}
+#dota2 {
+	text-decoration: none;
+	border:2px solid var(--red);
+	margin: 5px;
+	transition: 0.25s ease;
+}
 
-	#android {
-		text-decoration: none;
-		border:2px solid var(--violet);
-		margin: 5px;
-		transition: 0.25s ease;
-	}
+#android {
+	text-decoration: none;
+	border:2px solid var(--violet);
+	margin: 5px;
+	transition: 0.25s ease;
+}
 
-	#jokes {
-		text-decoration: none;
-		border:2px solid var(--magenta);
-		margin: 5px;
-		transition: 0.25s ease;
-	}
+#jokes {
+	text-decoration: none;
+	border:2px solid var(--magenta);
+	margin: 5px;
+	transition: 0.25s ease;
+}
 
-	#archlinux {
-		text-decoration: none;
-		border:2px solid var(--blue);
-		margin: 5px;
-		transition: 0.25s ease;
-	}
+#archlinux {
+	text-decoration: none;
+	border:2px solid var(--blue);
+	margin: 5px;
+	transition: 0.25s ease;
+}
 
-	#wiki {
-		text-decoration: none;
-		border:2px solid var(--cyan);
-		margin: 5px;
-		transition: 0.25s ease;
-	}
+#wiki {
+	text-decoration: none;
+	border:2px solid var(--cyan);
+	margin: 5px;
+	transition: 0.25s ease;
+}
 
-	#rice {
-		text-decoration: none;
-		border:2px solid var(--green);
-		margin: 5px;
-		transition: 0.25s ease;
-	}
+#rice {
+	text-decoration: none;
+	border:2px solid var(--green);
+	margin: 5px;
+	transition: 0.25s ease;
+}
 
-	#xda {
-		text-decoration: none;
-		border:2px solid var(--yellow);
-		margin: 5px;
-		transition: 0.25s ease;
-	}
+#xda {
+	text-decoration: none;
+	border:2px solid var(--yellow);
+	margin: 5px;
+	transition: 0.25s ease;
+}
 
-	#youtube:hover {
-		transition: 0.25s ease;
-		text-decoration: none;
-		background-color: var(--orange);
-		color: var(--white);
-	}
+#youtube:hover {
+	transition: 0.25s ease;
+	text-decoration: none;
+	background-color: var(--orange);
+	color: var(--white);
+}
 
-	#dota2:hover {
-		transition: 0.25s ease;
-		text-decoration: none;
-		background-color: var(--red);
-		color: var(--white);
-	}
+#dota2:hover {
+	transition: 0.25s ease;
+	text-decoration: none;
+	background-color: var(--red);
+	color: var(--white);
+}
 
-	#android:hover {
-		transition: 0.25s ease;
-		text-decoration: none;
-		background-color: var(--violet);
-		color: var(--white);
-	}
+#android:hover {
+	transition: 0.25s ease;
+	text-decoration: none;
+	background-color: var(--violet);
+	color: var(--white);
+}
 
-	#jokes:hover {
-		transition: 0.25s ease;
-		text-decoration: none;
-		background-color: var(--magenta);
-		color: var(--white);
-	}
+#jokes:hover {
+	transition: 0.25s ease;
+	text-decoration: none;
+	background-color: var(--magenta);
+	color: var(--white);
+}
 
-	#archlinux:hover {
-		transition: 0.25s ease;
-		text-decoration: none;
-		background-color: var(--blue);
-		color: var(--white);
-	}
+#archlinux:hover {
+	transition: 0.25s ease;
+	text-decoration: none;
+	background-color: var(--blue);
+	color: var(--white);
+}
 
-	#wiki:hover {
-		transition: 0.25s ease;
-		text-decoration: none;
-		background-color: var(--cyan);
-		color: var(--white);
-	}
+#wiki:hover {
+	transition: 0.25s ease;
+	text-decoration: none;
+	background-color: var(--cyan);
+	color: var(--white);
+}
 
-	#rice:hover {
-		transition: 0.25s ease;
-		text-decoration: none;
-		background-color: var(--green);
-		color: var(--white);
-	}
+#rice:hover {
+	transition: 0.25s ease;
+	text-decoration: none;
+	background-color: var(--green);
+	color: var(--white);
+}
 
-	#xda:hover {
-		text-decoration: none;
-		background-color: var(--yellow);
-		color: var(--white);
-		transition: 0.25s ease;
-	}
+#xda:hover {
+	text-decoration: none;
+	background-color: var(--yellow);
+	color: var(--white);
+	transition: 0.25s ease;
+}
 
-	input {
-		font-family: 'Open Sans', sans-serif;
-		text-align: center;
-		color: var(--black);
-		background-color: var(--main-color);
-		border: 2px solid var(--main-muted);
-		border-radius: 100px;
-		width: 40%;
-		height: 20px;
-		font-size: 12px;
-		padding : 8px;
-		box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
-		position: relative;
-		transition: 0.2s ease;
-	}
+input {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: var(--black);
+	background-color: var(--main-color);
+	border: 2px solid var(--main-muted);
+	border-radius: 100px;
+	width: 40%;
+	height: 20px;
+	font-size: 12px;
+	padding : 8px;
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+	position: relative;
+	transition: 0.2s ease;
+}
 
-	input:focus {
-		outline: 0;
-		background-color: var(--white);
-		border: 2px solid var(--white);
-	}
+input:focus {
+	outline: 0;
+	background-color: var(--white);
+	border: 2px solid var(--white);
+}
 
-	input:hover {
-		border: 2px solid var(--white);
-	}
+input:hover {
+	border: 2px solid var(--white);
+}
 
-	#logo {
-		margin-top: 100px;
-		font-family: 'Product Sans', monospace;
-		font-size: 80px;
-		text-align: center;
-		padding: 50px;
-        color: var(--main-muted);
+#logo {
+	margin-top: 100px;
+	font-family: 'Product Sans', monospace;
+	font-size: 80px;
+	text-align: center;
+	padding: 50px;
+	color: var(--main-muted);
 
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 
-	#big_g {
-		height: 100px;
-		margin-top: 50px;
-	}
+#big_g {
+	height: 100px;
+	margin-top: 50px;
+}
 
-	#icons {
-		position: center;
-		font-family: 'Product Sans', sans-serif;
-		text-align: center;
-		color: var(--main-muted);
-		font-size: 10px;
-		padding: 30px;
-		background: rgba(0,0,0,0);
+#icons {
+	position: center;
+	font-family: 'Product Sans', sans-serif;
+	text-align: center;
+	color: var(--main-muted);
+	font-size: 10px;
+	padding: 30px;
+	background: rgba(0,0,0,0);
 
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 
-		transition: 0.2s ease;
-	}
+	transition: 0.2s ease;
+}
 
-	#github ,#gplus, #twitter, #facebook, #mail, #reddit, #you {
-		color: var(--main-color);
-		transition: 0.25s ease;
-        border-radius: 100px;
-        width: 45px;
-        height: 45px;
-        margin: 5px;
-        line-height: 45px;
-	}
+#github ,#gplus, #twitter, #facebook, #mail, #reddit, #you {
+	color: var(--main-color);
+	transition: 0.25s ease;
+	border-radius: 100px;
+	width: 45px;
+	height: 45px;
+	margin: 5px;
+	line-height: 45px;
+}
 
-    #github {
-        background-color: var(--blue);
-    }
+#github {
+	background-color: var(--blue);
+}
 
-    #gplus, #you {
-        background-color: var(--red);
-    }
+#gplus, #you {
+	background-color: var(--red);
+}
 
-    #twitter {
-        background-color: var(--cyan);
-    }
+#twitter {
+	background-color: var(--cyan);
+}
 
-    #facebook {
-        background-color: var(--blue);
-    }
+#facebook {
+	background-color: var(--blue);
+}
 
-    #mail {
-        background-color: var(--yellow);
-    }
+#mail {
+	background-color: var(--yellow);
+}
 
-    #reddit {
-        background-color: var(--green);
-    }
+#reddit {
+	background-color: var(--green);
+}
 
-	#github:hover, #twitter:hover, #facebook:hover, #mail:hover, #gplus:hover , #reddit:hover, #you:hover {
-        filter: opacity(0.6);
-	}
+#github:hover, #twitter:hover, #facebook:hover, #mail:hover, #gplus:hover , #reddit:hover, #you:hover {
+	filter: opacity(0.6);
+}
 

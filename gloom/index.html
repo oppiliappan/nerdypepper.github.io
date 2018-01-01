@@ -1,342 +1,342 @@
 <!doctype html>
 <title>Home</title>
 <head><link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
-<body>
-	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
-	<script>			
-		window.onkeyup = keyup;
-		var inputTextValue;
-		function keyup(e) {
-			inputTextValue = e.target.value;
-			if (e.keyCode == 13) {
-				window.location = "http://www.google.com/search?q=" + inputTextValue;
-			}
-		}
-	</script>
+  <body>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+    <script>
+window.onkeyup = keyup;
+var inputTextValue;
+function keyup(e) {
+  inputTextValue = e.target.value;
+  if (e.keyCode == 13) {
+    window.location = "http://www.google.com/search?q=" + inputTextValue;
+  }
+}
+    </script>
 
-	
-	<div id="top_bar">
-		<a id="youtube", href="https://www.youtube.com">youtube</a>
-		<a id="dota2", href="https://www.reddit.com/r/DotA2">r/DotA2</a>
-		<a id="android", href="https://www.reddit.com/r/androidthemes">r/androidthemes</a>
-		<a id="jokes", href="https://www.reddit.com/r/Jokes">r/Jokes</a>
-		<a id="archlinux", href="https://www.reddit.com/r/archlinux">r/archlinux</a>
-		<a id="wiki", href="https://wikipedia.com">wikipedia</a>
-		<a id="rice", href="https://www.reddit.com/r/unixporn">r/unixporn</a>
-		<a id="xda", href="https://xda-developers.com">xda</a>
-</div>
-	
-	<div id="logo">
-		<!--Uses text and not an image to speed things up -->
-		<span style="color: var(--blue)">G</span>
-		<span style="color: var(--red)">o</span>
-		<span style="color: var(--yellow)">o</span>
-		<span style="color: var(--blue)">g</span>
-		<span style="color: var(--green);)">l</span>
-		<span style="color: var(--red);)">e</span>
-	</div>
-	
-	<div>
-		<input id="search_bar", style="search", type="text", spellcheck="false", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
-	</div>
-	
-	<div id="icons", style="font-size:48px">
-		<i id="github", class="fa fa-github-square", onclick="Javascript: window.location = 'https://github.com/NerdyPepper'"></i>
-		<i id="gplus", class="fa fa-google-plus-square", onclick="Javascript: window.location = 'https://plus.google.com'"></i>
-		<i id="twitter", class="fa fa-twitter-square", onclick="Javascript: window.location = 'https://twitter.com'"></i>
-        <i id="facebook", class="fa fa-facebook-square", onclick="Javascript: window.location = 'https://facebook.com'"></i>
-	</div>
-	
-	
-	
-	</body>
+
+    <div id="top_bar">
+      <a id="youtube", href="https://www.youtube.com">youtube</a>
+      <a id="dota2", href="https://www.reddit.com/r/DotA2">r/DotA2</a>
+      <a id="android", href="https://www.reddit.com/r/androidthemes">r/androidthemes</a>
+      <a id="jokes", href="https://www.reddit.com/r/Jokes">r/Jokes</a>
+      <a id="archlinux", href="https://www.reddit.com/r/archlinux">r/archlinux</a>
+      <a id="wiki", href="https://wikipedia.com">wikipedia</a>
+      <a id="rice", href="https://www.reddit.com/r/unixporn">r/unixporn</a>
+      <a id="xda", href="https://xda-developers.com">xda</a>
+    </div>
+
+    <div id="logo">
+      <!--Uses text and not an image to speed things up -->
+      <span style="color: var(--blue)">G</span>
+      <span style="color: var(--red)">o</span>
+      <span style="color: var(--yellow)">o</span>
+      <span style="color: var(--blue)">g</span>
+      <span style="color: var(--green);)">l</span>
+      <span style="color: var(--red);)">e</span>
+    </div>
+
+    <div>
+      <input id="search_bar", style="search", type="text", spellcheck="false", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
+    </div>
+
+    <div id="icons", style="font-size:48px">
+      <i id="github", class="fa fa-github-square", onclick="Javascript: window.location = 'https://github.com/NerdyPepper'"></i>
+      <i id="gplus", class="fa fa-google-plus-square", onclick="Javascript: window.location = 'https://plus.google.com'"></i>
+      <i id="twitter", class="fa fa-twitter-square", onclick="Javascript: window.location = 'https://twitter.com'"></i>
+      <i id="facebook", class="fa fa-facebook-square", onclick="Javascript: window.location = 'https://facebook.com'"></i>
+    </div>
+
+
+
+  </body>
 </head>
 
 <style type = "text/css">
-	
-	:root {
-		--main-color: #292a44;
-		--main-muted: #aaaaaa;
-		--green: #2de087;
-		--orange: #e88e2c;
-		--red: #e72d2d;
-		--cyan: #6dfedf;
-		--orange:  #e88e2c;
-		--blue: #678bdc;
-		--magenta: #ff6f9f;
-		--violet: #f92672;
-		--yellow: #ffdb7d;
-		--foreground-light: #678bdc;
-		--white: #ffffff;
-	}
-	
-	@keyframes rise {
-		0% {opacity:0;}
-		100% {opacity:1;}
-	}
-	
-	@keyframes fadein {
-		from {opacity:0.3;}
-		to {opacity:1;}
-	}
-	
-	body {
-		background-color: var(--main-color);
+
+:root {
+  --main-color: #292a44;
+  --main-muted: #aaaaaa;
+  --green: #2de087;
+  --orange: #e88e2c;
+  --red: #e72d2d;
+  --cyan: #6dfedf;
+  --orange:  #e88e2c;
+  --blue: #678bdc;
+  --magenta: #ff6f9f;
+  --violet: #f92672;
+  --yellow: #ffdb7d;
+  --foreground-light: #678bdc;
+  --white: #ffffff;
+}
+
+      @keyframes rise {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+
+      @keyframes fadein {
+        from {opacity:0.3;}
+        to {opacity:1;}
+      }
+
+      body {
+        background-color: var(--main-color);
         text-align: center;
-		margin: 0;
-	}
-		
-	#top_bar {
-		position: center;
-		font-family: 'SFNS Display', monospace;
-		text-align: center;
-		color: #dc322f;
-		font-size: 12px;
-		padding: 30px;
-		border: 5px solid var(--main-color);
-		background: var(--main-color);
-		box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
-		
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	
-	a:link , a:visited{
-		text-decoration: none;
-		color: var(--main-muted);
-		background-color:var(--main-color);
-		border-style: 2px solid;
-		border-radius: 3px;
-		padding: 8px;
-		width: 200px;
-		height: 100px;
-		
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		
-	}
-	
-	#youtube{
-		text-decoration: none;
-		border: 2px solid var(--orange);
-		margin: 5px;
-		transition: 0.5s ease;
-	} 
-	
-	#dota2 {
-		text-decoration: none;
-		border:2px solid var(--red);
-		margin: 5px;
-		transition: 0.5s ease;
-	} 
-	
-	#android {
-		text-decoration: none;
-		border:2px solid var(--violet);
-		margin: 5px;
-		transition: 0.5s ease;
-	} 
-	
-	#jokes {
-		text-decoration: none;
-		border:2px solid var(--magenta);
-		margin: 5px;
-		transition: 0.5s ease;
-	} 
-	
-	#archlinux {
-		text-decoration: none;
-		border:2px solid var(--blue); 
-		margin: 5px;
-		transition: 0.5s ease;
-	}
-	
-	#wiki {
-		text-decoration: none;
-		border:2px solid var(--cyan);
-		margin: 5px;	
-		transition: 0.5s ease;
-	}
-	
-	#rice {
-		text-decoration: none;
-		border:2px solid var(--green);	
-		margin: 5px;
-		transition: 0.5s ease;
-	}
-	
-	#xda {
-		text-decoration: none;
-		border:2px solid var(--yellow);	
-		margin: 5px;
-		transition: 0.5s ease;
-	}
-	
-	#youtube:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: var(--orange);
-		color: var(--white);
-	} 
-	
-	#dota2:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: var(--red);
-		color: var(--white);
-	} 
-	
-	#android:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: #d33682;
-		color: var(--white);
-	} 
-	
-	#jokes:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: var(--magenta);
-		color: var(--white);
-	} 
-	
-	#archlinux:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: var(--blue);
-		color: var(--white);
-	}
-	
-	#wiki:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: var(--cyan);	
-		color: var(--white);
-	}
-	
-	#rice:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: var(--green);	
-		color: var(--white);
-	}
-	
-	#xda:hover {
-		text-decoration: none;
-		background-color: var(--yellow);
-		color: var(--white);
-		transition: 0.5s ease;
-	} 
-	
-	input {
-		font-family: 'SFNS Display', monospace;
-		text-align: center;
-		color: var(--white);
-		background-color: var(--main-color);
-		border: 2px solid var(--main-color);
-		border-radius: 3px;
-		width: 42%;
-		height: 20px;
-		font-size: 14px;
-		padding : 8px;
-		box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.7);
-		position: relative;
-		transition: 0.2s ease;
-	}
-		
-	input:focus {
-		box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.7);
-	}
-		
-	input:hover {
-		box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.7);
-	}
-	
-	#logo {
-		margin-top: 50px;
-		font-family: 'SFNS Display', monospace;
-		font-size: 70px;
-		text-align: center;
-		padding: 50px;	
-		animation-name: rise;
-		animation-duration: 0.5s;
-		animation-iteration: 1;
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	
-	#big_g {
-		height: 100px;
-		margin-top: 50px;
-	}
-	
-	#icons {
-		position: center;
-		font-family: 'Monaco', sans-serif;
-		text-align: center;
-		color: var(--main-muted);
-		font-size: 12px;
-		padding: 30px;
-		background: rgba(0,0,0,0);
-		
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	
-	#github ,#gplus, #twitter, #facebook, #reddit, #mail, #youtube {
-		background-color: rgba(0,0,0,0);
-		color: var(--main-muted);
-		transition: 0.5s ease;
-	}
+        margin: 0;
+      }
 
-	
-	#github:hover {
-		color: var(--yellow);
-		transition: 0.5s ease;
-	}
+      #top_bar {
+        position: center;
+        font-family: 'SFNS Display', monospace;
+        text-align: center;
+        color: #dc322f;
+        font-size: 12px;
+        padding: 30px;
+        border: 5px solid var(--main-color);
+        background: var(--main-color);
+        box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
 
-	#gplus:hover {
-		color: var(--red);
-		transition: 0.5s ease;
-	}
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-	#twitter:hover {
-		color: var(--cyan);
-		transition: 0.5s ease;
-	}
+      a:link , a:visited{
+        text-decoration: none;
+        color: var(--main-muted);
+        background-color:var(--main-color);
+        border-style: 2px solid;
+        border-radius: 3px;
+        padding: 8px;
+        width: 200px;
+        height: 100px;
 
-    #facebook:hover {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+      }
+
+      #youtube{
+        text-decoration: none;
+        border: 2px solid var(--orange);
+        margin: 5px;
+        transition: 0.5s ease;
+      }
+
+      #dota2 {
+        text-decoration: none;
+        border:2px solid var(--red);
+        margin: 5px;
+        transition: 0.5s ease;
+      }
+
+      #android {
+        text-decoration: none;
+        border:2px solid var(--violet);
+        margin: 5px;
+        transition: 0.5s ease;
+      }
+
+      #jokes {
+        text-decoration: none;
+        border:2px solid var(--magenta);
+        margin: 5px;
+        transition: 0.5s ease;
+      }
+
+      #archlinux {
+        text-decoration: none;
+        border:2px solid var(--blue);
+        margin: 5px;
+        transition: 0.5s ease;
+      }
+
+      #wiki {
+        text-decoration: none;
+        border:2px solid var(--cyan);
+        margin: 5px;
+        transition: 0.5s ease;
+      }
+
+      #rice {
+        text-decoration: none;
+        border:2px solid var(--green);
+        margin: 5px;
+        transition: 0.5s ease;
+      }
+
+      #xda {
+        text-decoration: none;
+        border:2px solid var(--yellow);
+        margin: 5px;
+        transition: 0.5s ease;
+      }
+
+      #youtube:hover {
+        transition: 0.5s ease;
+        text-decoration: none;
+        background-color: var(--orange);
+        color: var(--white);
+      }
+
+      #dota2:hover {
+        transition: 0.5s ease;
+        text-decoration: none;
+        background-color: var(--red);
+        color: var(--white);
+      }
+
+      #android:hover {
+        transition: 0.5s ease;
+        text-decoration: none;
+        background-color: #d33682;
+        color: var(--white);
+      }
+
+      #jokes:hover {
+        transition: 0.5s ease;
+        text-decoration: none;
+        background-color: var(--magenta);
+        color: var(--white);
+      }
+
+      #archlinux:hover {
+        transition: 0.5s ease;
+        text-decoration: none;
+        background-color: var(--blue);
+        color: var(--white);
+      }
+
+      #wiki:hover {
+        transition: 0.5s ease;
+        text-decoration: none;
+        background-color: var(--cyan);
+        color: var(--white);
+      }
+
+      #rice:hover {
+        transition: 0.5s ease;
+        text-decoration: none;
+        background-color: var(--green);
+        color: var(--white);
+      }
+
+      #xda:hover {
+        text-decoration: none;
+        background-color: var(--yellow);
+        color: var(--white);
+        transition: 0.5s ease;
+      }
+
+      input {
+        font-family: 'SFNS Display', monospace;
+        text-align: center;
+        color: var(--white);
+        background-color: var(--main-color);
+        border: 2px solid var(--main-color);
+        border-radius: 3px;
+        width: 42%;
+        height: 20px;
+        font-size: 14px;
+          padding : 8px;
+        box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.7);
+        position: relative;
+        transition: 0.2s ease;
+      }
+
+      input:focus {
+        box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.7);
+      }
+
+      input:hover {
+        box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.7);
+      }
+
+      #logo {
+        margin-top: 50px;
+        font-family: 'SFNS Display', monospace;
+        font-size: 70px;
+        text-align: center;
+        padding: 50px;
+        animation-name: rise;
+        animation-duration: 0.5s;
+        animation-iteration: 1;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      #big_g {
+        height: 100px;
+        margin-top: 50px;
+      }
+
+      #icons {
+        position: center;
+        font-family: 'Monaco', sans-serif;
+        text-align: center;
+        color: var(--main-muted);
+        font-size: 12px;
+        padding: 30px;
+        background: rgba(0,0,0,0);
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      #github ,#gplus, #twitter, #facebook, #reddit, #mail, #youtube {
+        background-color: rgba(0,0,0,0);
+        color: var(--main-muted);
+        transition: 0.5s ease;
+      }
+
+
+      #github:hover {
+        color: var(--yellow);
+        transition: 0.5s ease;
+      }
+
+      #gplus:hover {
+        color: var(--red);
+        transition: 0.5s ease;
+      }
+
+      #twitter:hover {
+        color: var(--cyan);
+        transition: 0.5s ease;
+      }
+
+      #facebook:hover {
         color: var(--blue);
         transition: 0.5s ease;
-    }
+      }
 
-	#reddit:hover {
-		color: var(--orange);
-		transition: 0.5s ease;
-	}
+      #reddit:hover {
+        color: var(--orange);
+        transition: 0.5s ease;
+      }
 
-	#mail:hover {
-		color: var(--blue);
-		transition: 0.5s ease;
-	}
+      #mail:hover {
+        color: var(--blue);
+        transition: 0.5s ease;
+      }
 
-	#youtubei:hover {
-		color: var(--red);
-		transition: 0.5s ease;
-	}
+      #youtubei:hover {
+        color: var(--red);
+        transition: 0.5s ease;
+      }

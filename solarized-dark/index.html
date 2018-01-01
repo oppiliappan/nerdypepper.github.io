@@ -1,61 +1,60 @@
 <!--
-Minimal Startpage for Chrome/Firefox
-Incompatible with Safari/IE8
-Inspired By Solarized Dark ColorScheme
-					--By-NerdyPepper
+	Minimal Startpage for Chrome/Firefox
+	Incompatible with Safari/IE8
+	Inspired By Solarized Dark ColorScheme
+	-By-NerdyPepper
 -->
-
 
 <!doctype html>
 <title>Home</title>
 <head><link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
-<body>
-	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
-	<script>			
-		window.onkeyup = keyup;
-		var inputTextValue;
-		function keyup(e) {
-			inputTextValue = e.target.value;
-			if (e.keyCode == 13) {
-				window.location = "http://www.google.com/search?q=" + inputTextValue;
-			}
-		}
-	</script>
+	<body>
+		<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+		<script>
+window.onkeyup = keyup;
+var inputTextValue;
+function keyup(e) {
+	inputTextValue = e.target.value;
+	if (e.keyCode == 13) {
+		window.location = "http://www.google.com/search?q=" + inputTextValue;
+	}
+}
+		</script>
 
-	
-	<div id="top_bar">
-		<a id="frontpage", href="https://www.youtube.com">youtube</a>
-		<a id="dota2", href="https://www.reddit.com/r/DotA2">r/DotA2</a>
-		<a id="android", href="https://www.reddit.com/r/androidthemes">r/androidthemes</a>
-		<a id="jokes", href="https://www.reddit.com/r/Jokes">r/Jokes</a>
-		<a id="archlinux", href="https://www.reddit.com/r/archlinux">r/archlinux</a>
-		<a id="wiki", href="https://wikipedia.com">wikipedia</a>
-		<a id="rice", href="https://www.reddit.com/r/unixporn">r/unixporn</a>
-		<a id="xda", href="https://xda-developers.com">xda</a>
-	</div>
-	
-	<div id="logo">
-		<!--Uses text and not an image to speed things up -->
-		<span style="color: #268bd2">G</span>
-		<span style="color: #dc322f">o</span>
-		<span style="color: #b58900">o</span>
-		<span style="color: #268bd2">g</span>
-		<span style="color: #859900">l</span>
-		<span style="color: #dc322f">e</span>
-	</div>
-	
-	<div>
-		<input id="search_bar", style="search", type="text", spellcheck="false", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
-	</div>
-	
-	<div id="icons", style="font-size:48px">
-		<i id="github", class="fa fa-github", onclick="Javascript: window.location = 'https://github.com/NerdyPepper'"></i>
-		<i id="gplus", class="fa fa-google-plus-circle", onclick="Javascript: window.location = 'https://plus.google.com'"></i>
-		<i id="twitter", class="fa fa-twitter", onclick="Javascript: window.location = 'https://twitter.com'"></i>
-	</div>
-	
-	
-	
+
+		<div id="top_bar">
+			<a id="frontpage", href="https://www.youtube.com">youtube</a>
+			<a id="dota2", href="https://www.reddit.com/r/DotA2">r/DotA2</a>
+			<a id="android", href="https://www.reddit.com/r/androidthemes">r/androidthemes</a>
+			<a id="jokes", href="https://www.reddit.com/r/Jokes">r/Jokes</a>
+			<a id="archlinux", href="https://www.reddit.com/r/archlinux">r/archlinux</a>
+			<a id="wiki", href="https://wikipedia.com">wikipedia</a>
+			<a id="rice", href="https://www.reddit.com/r/unixporn">r/unixporn</a>
+			<a id="xda", href="https://xda-developers.com">xda</a>
+		</div>
+
+		<div id="logo">
+			<!--Uses text and not an image to speed things up -->
+			<span style="color: #268bd2">G</span>
+			<span style="color: #dc322f">o</span>
+			<span style="color: #b58900">o</span>
+			<span style="color: #268bd2">g</span>
+			<span style="color: #859900">l</span>
+			<span style="color: #dc322f">e</span>
+		</div>
+
+		<div>
+			<input id="search_bar", style="search", type="text", spellcheck="false", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
+		</div>
+
+		<div id="icons", style="font-size:48px">
+			<i id="github", class="fa fa-github", onclick="Javascript: window.location = 'https://github.com/NerdyPepper'"></i>
+			<i id="gplus", class="fa fa-google-plus-circle", onclick="Javascript: window.location = 'https://plus.google.com'"></i>
+			<i id="twitter", class="fa fa-twitter", onclick="Javascript: window.location = 'https://twitter.com'"></i>
+		</div>
+
+
+
 	</body>
 </head>
 
@@ -65,269 +64,269 @@ Inspired By Solarized Dark ColorScheme
 
 
 <style type = "text/css">
-	
-	:root {
-		--main-color: #002b36;
-		--green: #859900;
-		--orange: #cb4b16;
-		--red: #dc322f;
-		--cyan: #2aa198;
-		--blue: #268bd2;
-		--magenta: #d33682;
-		--violet: #6c71c4;
-		--yellow: #b58900;
-		--foreground-light: #93a1a1;
-		--white: #ffffff;
-	}
-	
-	
-	@keyframes rise {
-		0% {opacity:0;}
-		100% {opacity:1;}
-	}
-	
-	@keyframes fadein {
-		from {opacity:0.3;}
-		to {opacity:1;}
-	}
-	
-	body {
-		background-color: var(--main-color);
-		text-align: center;
-		margin: 0;
-	}
-		
-	#top_bar {
-		position: center;
-		font-family: 'Nova Mono', monospace;
-		text-align: center;
-		color: #dc322f;
-		font-size: 12px;
-		padding: 30px;
-		border: 5px solid #073642;
-		background: #073642;
-		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
-		
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	
-	a:link , a:visited{
-		text-decoration: none;
-		color: #93a1a1;
-		background-color:#073642;
-		border-style: 2px solid;
-		border-radius: 3px;
-		padding: 8px;
-		width: 200px;
-		height: 100px;
-		
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		
-	}
-	
-	#frontpage {
-		text-decoration: none;
-		border: 2px solid #cb4b16;
-		margin: 5px;
-		transition: 0.5s ease;
-	} 
-	
-	#dota2 {
-		text-decoration: none;
-		border:2px solid #dc322f;
-		margin: 5px;
-		transition: 0.5s ease;
-	} 
-	
-	#android {
-		text-decoration: none;
-		border:2px solid #d33682;
-		margin: 5px;
-		transition: 0.5s ease;
-	} 
-	
-	#jokes {
-		text-decoration: none;
-		border:2px solid #6c71c4;
-		margin: 5px;
-		transition: 0.5s ease;
-	} 
-	
-	#archlinux {
-		text-decoration: none;
-		border:2px solid #268bd2;
-		margin: 5px;
-		transition: 0.5s ease;
-	}
-	
-	#wiki {
-		text-decoration: none;
-		border:2px solid #2aa198;
-		margin: 5px;	
-		transition: 0.5s ease;
-	}
-	
-	#rice {
-		text-decoration: none;
-		border:2px solid var(--green);	
-		margin: 5px;
-		transition: 0.5s ease;
-	}
-	
-	#xda {
-		text-decoration: none;
-		border:2px solid var(--yellow);	
-		margin: 5px;
-		transition: 0.5s ease;
-	}
-	
-	#frontpage:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: #cb4b16;
-		color: #ffffff;
-	} 
-	
-	#dota2:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: #dc322f;
-		color: #ffffff;
-	} 
-	
-	#android:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: #d33682;
-		color: #ffffff;
-	} 
-	
-	#jokes:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: #6c71c4;
-		color: #ffffff;
-	} 
-	
-	#archlinux:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: #268bd2;
-		color: #ffffff;
-	}
-	
-	#wiki:hover {
-		transition: 0.5s ease;;
-		text-decoration: none;
-		background-color: #2aa198;	
-		color: #ffffff;
-	}
-	
-	#rice:hover {
-		transition: 0.5s ease;
-		text-decoration: none;
-		background-color: var(--green);	
-		color: #ffffff;
-	}
-	
-	#xda:hover {
-		text-decoration: none;
-		background-color: var(--yellow);
-		color: #ffffff;
-		transition: 0.5s ease;
-	}
-	
-	input {
-		font-family: 'Nova Mono', monospace;
-		text-align: center;
-		color: #93a1a1;
-		background-color: #073642;
-		border: 2px solid #073642;
-		border-radius: 3px;
-		width: 42%;
-		height: 20px;
-		font-size: 14px;
-		padding : 8px;
-		position: relative;
-		transition: 0.5s ease;
-	}
-		
-	input:focus {
-		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
-		border: 2px solid #073642;
-	}
-		
-	input:hover {
-		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
-		border: 2px solid #073642;
-	}
-	
-	#logo {
-		margin-top: 50px;
-		font-family: 'Nova Mono', monospace;
-		font-size: 50px;
-		text-align: center;
-		padding: 50px;	
-		animation-name: rise;
-		animation-duration: 0.5s;
-		animation-iteration: 1;
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	
-	#big_g {
-		height: 100px;
-		margin-top: 50px;
-	}
-	
-	#icons {
-		position: center;
-		font-family: 'Nova Mono', sans-serif;
-		text-align: center;
-		color: #93a1a1;
-		font-size: 12px;
-		padding: 30px;
-		background: #002b36;
-		
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	
-	#github ,#gplus, #twitter{
-		background-color: #002b36;
-		color: var(--foreground-light);
-		transition: 0.5s ease;
-	}
-	
-	#github:hover {
-		color: var(--violet);
-		transition: 0.5s ease;
-	}
-	
-	#gplus:hover {
-		color: var(--red);
-		transition: 0.5s ease;
-	}
 
-	#twitter:hover {
-		color: var(--blue);
-		transition: 0.5s ease;
-	}
+:root {
+	--main-color: #002b36;
+	--green: #859900;
+	--orange: #cb4b16;
+	--red: #dc322f;
+	--cyan: #2aa198;
+	--blue: #268bd2;
+	--magenta: #d33682;
+	--violet: #6c71c4;
+	--yellow: #b58900;
+	--foreground-light: #93a1a1;
+	--white: #ffffff;
+}
+
+
+		@keyframes rise {
+			0% {opacity:0;}
+			100% {opacity:1;}
+		}
+
+		@keyframes fadein {
+			from {opacity:0.3;}
+			to {opacity:1;}
+		}
+
+		body {
+			background-color: var(--main-color);
+			text-align: center;
+			margin: 0;
+		}
+
+		#top_bar {
+			position: center;
+			font-family: 'Nova Mono', monospace;
+			text-align: center;
+			color: #dc322f;
+			font-size: 12px;
+			padding: 30px;
+			border: 5px solid #073642;
+			background: #073642;
+			box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		a:link , a:visited{
+			text-decoration: none;
+			color: #93a1a1;
+			background-color:#073642;
+			border-style: 2px solid;
+			border-radius: 3px;
+			padding: 8px;
+			width: 200px;
+			height: 100px;
+
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+
+		}
+
+		#frontpage {
+			text-decoration: none;
+			border: 2px solid #cb4b16;
+			margin: 5px;
+			transition: 0.5s ease;
+		}
+
+		#dota2 {
+			text-decoration: none;
+			border:2px solid #dc322f;
+			margin: 5px;
+			transition: 0.5s ease;
+		}
+
+		#android {
+			text-decoration: none;
+			border:2px solid #d33682;
+			margin: 5px;
+			transition: 0.5s ease;
+		}
+
+		#jokes {
+			text-decoration: none;
+			border:2px solid #6c71c4;
+			margin: 5px;
+			transition: 0.5s ease;
+		}
+
+		#archlinux {
+			text-decoration: none;
+			border:2px solid #268bd2;
+			margin: 5px;
+			transition: 0.5s ease;
+		}
+
+		#wiki {
+			text-decoration: none;
+			border:2px solid #2aa198;
+			margin: 5px;
+			transition: 0.5s ease;
+		}
+
+		#rice {
+			text-decoration: none;
+			border:2px solid var(--green);
+			margin: 5px;
+			transition: 0.5s ease;
+		}
+
+		#xda {
+			text-decoration: none;
+			border:2px solid var(--yellow);
+			margin: 5px;
+			transition: 0.5s ease;
+		}
+
+		#frontpage:hover {
+			transition: 0.5s ease;
+			text-decoration: none;
+			background-color: #cb4b16;
+			color: #ffffff;
+		}
+
+		#dota2:hover {
+			transition: 0.5s ease;
+			text-decoration: none;
+			background-color: #dc322f;
+			color: #ffffff;
+		}
+
+		#android:hover {
+			transition: 0.5s ease;
+			text-decoration: none;
+			background-color: #d33682;
+			color: #ffffff;
+		}
+
+		#jokes:hover {
+			transition: 0.5s ease;
+			text-decoration: none;
+			background-color: #6c71c4;
+			color: #ffffff;
+		}
+
+		#archlinux:hover {
+			transition: 0.5s ease;
+			text-decoration: none;
+			background-color: #268bd2;
+			color: #ffffff;
+		}
+
+		#wiki:hover {
+			transition: 0.5s ease;;
+			text-decoration: none;
+			background-color: #2aa198;
+			color: #ffffff;
+		}
+
+		#rice:hover {
+			transition: 0.5s ease;
+			text-decoration: none;
+			background-color: var(--green);
+			color: #ffffff;
+		}
+
+		#xda:hover {
+			text-decoration: none;
+			background-color: var(--yellow);
+			color: #ffffff;
+			transition: 0.5s ease;
+		}
+
+		input {
+			font-family: 'Nova Mono', monospace;
+			text-align: center;
+			color: #93a1a1;
+			background-color: #073642;
+			border: 2px solid #073642;
+			border-radius: 3px;
+			width: 42%;
+			height: 20px;
+			font-size: 14px;
+				padding : 8px;
+			position: relative;
+			transition: 0.5s ease;
+		}
+
+		input:focus {
+			box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+			border: 2px solid #073642;
+		}
+
+		input:hover {
+			box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+			border: 2px solid #073642;
+		}
+
+		#logo {
+			margin-top: 50px;
+			font-family: 'Nova Mono', monospace;
+			font-size: 50px;
+			text-align: center;
+			padding: 50px;
+			animation-name: rise;
+			animation-duration: 0.5s;
+			animation-iteration: 1;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		#big_g {
+			height: 100px;
+			margin-top: 50px;
+		}
+
+		#icons {
+			position: center;
+			font-family: 'Nova Mono', sans-serif;
+			text-align: center;
+			color: #93a1a1;
+			font-size: 12px;
+			padding: 30px;
+			background: #002b36;
+
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		#github ,#gplus, #twitter{
+			background-color: #002b36;
+			color: var(--foreground-light);
+			transition: 0.5s ease;
+		}
+
+		#github:hover {
+			color: var(--violet);
+			transition: 0.5s ease;
+		}
+
+		#gplus:hover {
+			color: var(--red);
+			transition: 0.5s ease;
+		}
+
+		#twitter:hover {
+			color: var(--blue);
+			transition: 0.5s ease;
+		}
