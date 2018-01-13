@@ -1,0 +1,87 @@
+:root {
+
+  --primary          : #070d0f;
+  --primary-light    : #323232;
+  --accent           : #ef8e6d;
+  --foreground       : #d0cbaf;
+  --foreground-light : #858585;
+
+}
+
+::webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+}
+
+body {
+  background-color: var(--primary);
+  text-align       : center;
+  margin           : 0px;
+}
+
+a:link, a:visited, a:hover{
+  text-decoration: none;
+}
+
+#search_bar {
+  margin-top       : 15%;
+  font-family      : "Inter UI";
+  font-size        : 15px;
+  text-align       : center;
+  color            : var(--foreground);
+  background-color : transparent;
+
+  border        : none;
+  border-bottom : 2px solid var(--foreground-light);
+  width         : 100%;
+  height        : 20px;
+  padding-bottom: 8px;
+
+  transition : 0.5s ease;
+  outline    : none;
+
+}
+
+
+#icons {
+  text-align : center;
+  color      : var(--accent);
+  display    : block;
+  padding    : 25px;
+}
+
+object {
+  padding          : 12px;
+  color            : var(--foreground);
+  background-color : var(--primary);
+  border           : 0px solid transparent;
+  pointer-events   : none;
+
+}
+
+#time {
+  color: var(--foreground);
+}
+
+#container {
+  text-align: center;
+  margin: none;
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 30%;
+  background: var(--primary);
+}
+
+#underline {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  width: 0%;
+  border: none;
+  border-bottom: 1px solid var(--accent);
+
+  transition: 0.2s ease;
+}

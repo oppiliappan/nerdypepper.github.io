@@ -1,9 +1,10 @@
 # nerdypepper.github.io
-GitHub page for My Startpage
+
+### ./startpages
 
 A collection of startpages based on popular colorschemes.
 
-Link to any startpage: https://nerdypepper.github.io/colorscheme_name_here/
+Link to any startpage: https://nerdypepper.github.io/startpages/colorscheme_name_here/
 
 Following are the available colorschemes:
 
@@ -13,7 +14,7 @@ Following are the available colorschemes:
 
 - material
 
-- nord
+- nord by [saligrama](https://github.com/saligrama/)
 
 - ocean
 
@@ -24,4 +25,3 @@ Following are the available colorschemes:
 - solarized-dark
 
 - tomorrow-night
-
