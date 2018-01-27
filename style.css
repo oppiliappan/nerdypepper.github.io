@@ -1,14 +1,14 @@
 :root {
 
-  --primary          : #070d0f;
-  --primary-light    : #323232;
-  --accent           : #ef8e6d;
-  --foreground       : #d0cbaf;
+  --primary          : #1d2021;
+  --primary-light    : #504945;
+  --accent           : #83a598;
+  --foreground       : #fbf1c7;
   --foreground-light : #858585;
 
 }
 
-::webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: var(--primary);
+  background-color : var(--primary);
   text-align       : center;
   margin           : 0px;
 }
@@ -67,21 +67,21 @@ object {
 }
 
 #container {
-  text-align: center;
-  margin: none;
-  margin-left: 35%;
-  margin-top: 10%;
-  width: 30%;
-  background: var(--primary);
+  text-align  : center;
+  margin      : none;
+  margin-left : 35%;
+  margin-top  : 10%;
+  width       : 30%;
+  background  : var(--primary);
 }
 
 #underline {
-  margin: 0 auto;
-  text-align: center;
-  padding: 0px 0px 0px 0px;
-  width: 0%;
-  border: none;
-  border-bottom: 1px solid var(--accent);
+  margin        : 0 auto;
+  text-align    : center;
+  padding       : 0px 0px 0px 0px;
+  width         : 0%;
+  border        : none;
+  border-bottom : 1px solid var(--accent);
 
   transition: 0.2s ease;
 }
