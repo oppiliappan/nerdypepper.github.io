@@ -1,3 +1,3 @@
-%s/currentColor/#d0cbaf/g
+%s/#d0cbaf/#222222/g
 write
 quit
