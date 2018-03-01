@@ -1,0 +1,31 @@
+:root {
+  --bg: #121c21;
+  --bgl:#1e2e36;
+  --fg: #aaafb2;
+  --red: #f0696f;  /* red */
+  --grn: #fa9a6a; /* green */
+  --ylw: #f7cca1; /* yellow */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: "Input";
+}
+
+body {
+  background-color : var(--bg);
+  text-align       : center;
+  margin           : 0px;
+}
+
+#main {
+  background-color: var(--bg);
+  text-align : center;
+}
+
+#content {
+  width: 65%;
+}
