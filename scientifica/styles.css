@@ -1,31 +1,22 @@
 :root {
-  --bg: #121c21;
-  --bgl:#1e2e36;
-  --fg: #aaafb2;
-  --red: #f0696f;  /* red */
-  --grn: #fa9a6a; /* green */
-  --ylw: #f7cca1; /* yellow */
+  --bg  : #121c21;
+  --bgl : #1e2e36;
+  --fg  : #aaafb2;
+  --grn : #fa9a6a; /* green  */
+  --red : #f0696f; /* red    */
+  --ylw : #f7cca1; /* yellow */
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-@font-face {
-  font-family: "Input";
-}
-
 body {
   background-color : var(--bg);
-  text-align       : center;
+  color            : var(--fg);
   margin           : 0px;
 }
 
-#main {
-  background-color: var(--bg);
-  text-align : center;
-}
-
-#content {
-  width: 65%;
+pre {
+  font-family: 'Scientifica'
 }
