@@ -2,21 +2,48 @@
   --bg  : #121c21;
   --bgl : #1e2e36;
   --fg  : #aaafb2;
-  --grn : #fa9a6a; /* green  */
+  --grn : #76a08c; /* green  */
   --red : #f0696f; /* red    */
   --ylw : #f7cca1; /* yellow */
+  --blu : #718c97; /* blue   */
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
+@font-face {
+  font-family: "scientifica";
+  src: url('scientifica.woff') format('woff');
+}
+
 body {
   background-color : var(--bg);
   color            : var(--fg);
   margin           : 0px;
+  padding          : 5% 0% 0% 15%;
 }
 
 pre {
-  font-family: 'Scientifica'
+  font-family: scientifica;
+  font-size: 24px;
+}
+
+.red {
+  color: var(--red);
+}
+
+.green {
+  color: var(--grn);
+}
+
+.yellow {
+  color: var(--ylw);
+}
+
+.blue {
+  color: var(--blu);
+}
+a:link, a:visited, a:hover, a:active {
+  color: var(--blu);
 }
