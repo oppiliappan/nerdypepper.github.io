@@ -2,6 +2,7 @@
   --bg  : #121c21;
   --bgl : #1e2e36;
   --fg  : #aaafb2;
+  --fgl : #3f6173;
   --grn : #76a08c; /* green  */
   --red : #f0696f; /* red    */
   --ylw : #f7cca1; /* yellow */
@@ -21,7 +22,7 @@ body {
   background-color : var(--bg);
   color            : var(--fg);
   margin           : 0px;
-  padding          : 5% 0% 0% 15%;
+  padding          : 5% 15% 5% 15%;
 }
 
 pre {
@@ -44,6 +45,11 @@ pre {
 .blue {
   color: var(--blu);
 }
+
+.lightfg {
+  color: var(--fgl);
+}
+
 a:link, a:visited, a:hover, a:active {
   color: var(--blu);
 }
