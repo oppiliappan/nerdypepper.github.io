@@ -1,5 +1,7 @@
 :root {
+
   --bg  : #121c21;
+  --bgd : #101010;
   --bgl : #1e2e36;
   --fg  : #aaafb2;
   --fgl : #3f6173;
@@ -7,6 +9,7 @@
   --red : #f0696f; /* red    */
   --ylw : #f7cca1; /* yellow */
   --blu : #718c97; /* blue   */
+  --org : #fa9a6a; /* orange */
 }
 
 ::-webkit-scrollbar {
@@ -50,6 +53,30 @@ pre {
   color: var(--fgl);
 }
 
+.primary {
+  color: var(--bg);
+  background-color: var(--red);
+}
+
+.secondary {
+  color: var(--bg);
+  background-color: var(--org);
+}
+
+.teritary {
+  color: var(--fg);
+  background-color: var(--bgl);
+}
+
 a:link, a:visited, a:hover, a:active {
   color: var(--blu);
+}
+
+#code {
+  padding: 5px 0px 0px 12px;
+  border: 0px solid transparent;
+  border-radius: 12px;
+  -moz-box-shadow:    0px 0px 40px 12px var(--bgd);
+  -webkit-box-shadow: 0px 0px 40px 12px var(--bgd);
+  box-shadow:         0px 0px 40px 12px var(--bgd);
 }
