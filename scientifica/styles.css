@@ -25,12 +25,30 @@ body {
   background-color : var(--bg);
   color            : var(--fg);
   margin           : 0px;
-  padding          : 5% 15% 5% 15%;
+  padding          : 5% 15% 2% 15%;
 }
 
 pre {
   font-family : scientifica;
   font-size   : 24px;
+}
+
+#statusline {
+  list-style-type: none;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  background-color: var(--bgl);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 0px 15px 0px 15px;
 }
 
 .red {
@@ -72,11 +90,13 @@ pre {
   user-select: none;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link, a:visited {
   color: var(--blu);
 }
 
 #code {
+  font-family: scientifica;
+  font-size: 24px;
   position: center;
   padding : 5px 0px 0px 12px;
 }
