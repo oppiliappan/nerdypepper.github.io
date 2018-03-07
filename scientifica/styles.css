@@ -1,15 +1,15 @@
 :root {
 
   --bg  : #121c21;
-  --bgd : #101010;
+  --bgd : #151515;
   --bgl : #1e2e36;
+  --blu : #718c97; /* blue   */
   --fg  : #aaafb2;
   --fgl : #3f6173;
   --grn : #76a08c; /* green  */
+  --org : #fa9a6a; /* orange */
   --red : #f0696f; /* red    */
   --ylw : #f7cca1; /* yellow */
-  --blu : #718c97; /* blue   */
-  --org : #fa9a6a; /* orange */
 }
 
 ::-webkit-scrollbar {
@@ -17,8 +17,8 @@
 }
 
 @font-face {
-  font-family: "scientifica";
-  src: url('scientifica.woff') format('woff');
+  font-family : "scientifica";
+  src         : url('scientifica.woff') format('woff');
 }
 
 body {
@@ -29,8 +29,8 @@ body {
 }
 
 pre {
-  font-family: scientifica;
-  font-size: 24px;
+  font-family : scientifica;
+  font-size   : 24px;
 }
 
 .red {
@@ -54,18 +54,22 @@ pre {
 }
 
 .primary {
-  color: var(--bg);
-  background-color: var(--red);
+  color            : var(--bg);
+  background-color : var(--red);
 }
 
 .secondary {
-  color: var(--bg);
-  background-color: var(--org);
+  color            : var(--bg);
+  background-color : var(--org);
 }
 
 .teritary {
-  color: var(--fg);
-  background-color: var(--bgl);
+  color            : var(--fg);
+  background-color : var(--bgl);
+}
+
+.unselectable {
+  user-select: none;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -73,10 +77,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #code {
-  padding: 5px 0px 0px 12px;
-  border: 0px solid transparent;
-  border-radius: 12px;
-  -moz-box-shadow:    0px 0px 40px 12px var(--bgd);
-  -webkit-box-shadow: 0px 0px 40px 12px var(--bgd);
-  box-shadow:         0px 0px 40px 12px var(--bgd);
+  position: center;
+  padding : 5px 0px 0px 12px;
 }
