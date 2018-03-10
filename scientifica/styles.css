@@ -104,4 +104,5 @@ a:link, a:visited {
   font-size: 24px;
   padding : 12px 24px 24px 24px;
   position: center;
+  word-wrap: break-word;
 }
