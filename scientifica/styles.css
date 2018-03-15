@@ -34,11 +34,11 @@ pre {
 }
 
 #statusline {
+  background-color: var(--bgl);
   list-style-type: none;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
-  background-color: var(--bgl);
 }
 
 li {
@@ -47,8 +47,8 @@ li {
 
 li a {
   display: block;
-  text-align: center;
   padding: 0px 15px 0px 15px;
+  text-align: center;
 }
 
 .red {
@@ -97,9 +97,9 @@ a:link, a:visited {
 #code {
   -moz-box-shadow:    0px 0px 40px 6px var(--bgd);
   -webkit-box-shadow: 0px 0px 40px 6px var(--bgd);
-  box-shadow:         0px 0px 40px 6px var(--bgd);
-  border: 0px solid transparent;
   border-radius: 5px;
+  border: 0px solid transparent;
+  box-shadow:         0px 0px 40px 6px var(--bgd);
   font-family: scientifica;
   font-size: 24px;
   padding : 12px 24px 24px 24px;
