@@ -58,4 +58,5 @@ li {
 a, a:hover, a:visited, a:active {
   color: var(--fg);
   text-decoration: none;
+  display: block;
 }
