@@ -1,0 +1,51 @@
+:root {
+  --bg     : #eeeeee;
+  --bg-alt : #dedede;
+  --fg     : #212121;
+  --fg-alt : #545454;
+  --accent : #336699;
+}
+
+body {
+  background: var(--bg);
+}
+
+h2 {
+  color: var(--accent);
+  font-size: 72px;
+  font-family: 'Playfair Display', serif;
+}
+
+h4 {
+  font-size: 32px;
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 50px;
+}
+
+.centered {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.thicc {
+  font-family:"Source Sans Pro", sans;
+  font-weight: 900;
+  font-size: 84px;
+  color: var(--accent);
+}
+
+li {
+  font-size: 32px;
+  padding: 40px;
+  font-family:"Source Sans Pro", sans;
+  display: inline-block;
+}
+
+a, a:hover, a:visited, a:active {
+  color: var(--fg);
+  text-decoration: none;
+}

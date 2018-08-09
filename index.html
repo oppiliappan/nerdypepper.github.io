@@ -1,47 +1,22 @@
-<!doctype html>
-
-<title>Home</title>
-
-<body>
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-  <script>
-window.onkeyup = keyup;
-
-var inputTextValue;
-var logo = document.getElementById("logo");
-var icons = document.getElementById("icons");
-
-function keyup(e) {
-  inputTextValue = e.target.value;
-  if (e.keyCode == 13) {
-    window.location = "https://duckduckgo.com/?q=" + inputTextValue;
-  }
-}
-  </script>
-
-  <div id="container">
-    <input id="search_bar" style="search" type="text" spellcheck="false" onKeydown="Javascript: if (event.keyCode == 13) search();",
-                                                                         onfocus="document.getElementById('underline').style.width = '100%'; document.getElementById('search_bar').style.borderBottom = '2px solid var(--accent)';",
-                                                                         onblur="document.getElementById('underline').style.width = '0%'; document.getElementById('search_bar').style.borderBottom = '2px solid var(--foreground-light)';">
-    <div id="underline"></div>
-  </div>
-
-  <div id="icons", style="font-size:32px">
-
-    <a href="https://github.com/NerdyPepper"><object data="./icons/github.svg" type="image/svg+xml"></object></a>
-    <a href="https://facebook.com/messages"><object data="./icons/thumbs-up.svg" type="image/svg+xml"></object></a>
-    <a href="https://reddit.com"><object data="./icons/book-open.svg" type="image/svg+xml"></object></a>
-    <a href="https://inbox.google.com"> <object data="./icons/mail.svg" type="image/svg+xml"></object></a>
-    <a href="https://youtube.com"><object data="./icons/tv.svg" type="image/svg+xml"></object></a>
-    <a href="https://xda-developers.com"><object data="./icons/smartphone.svg" type="image/svg+xml"></object></a>
-    <a href="https://unsplash.com"><object data="./icons/camera.svg" type="image/svg+xml"></object></a>
-
-  </div>
-
-
-</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Source+Sans+Pro:400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <meta charset="UTF-8">
+  <title></title>
 </head>
-
+<body>
+  <div class="centered">
+    <h2>Akshay Oppiliappan</h2>
+    <h4>GNU/Linux & Programming</h4>
+    <hr />
+    <ul>
+      <li><a href="https://github.com/nerdypepper"><span class="thicc">G</span>ithub</a></li>
+      <li><a href="https://keybase.io/nerdypepper"><span class="thicc">K</span>eybase</a></li>
+      <li><a href="mailto:nerdypepper@tuta.io"><span class="thicc">E</span>mail</a></li>
+      <li><a href="https://linkedin.com/in/nerdypepper"><span class="thicc">L</span>inkedin</a></li>
+    </ul>
+  </div>
+</body>
+</html>
