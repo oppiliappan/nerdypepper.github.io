@@ -23,7 +23,7 @@ h4 {
 }
 
 h6 {
-  font-size: 24px;
+  font-size: 32px;
   font-family: 'Montserrat', sans;
   color: var(--accent);
 }
@@ -58,9 +58,4 @@ li {
 a, a:hover, a:visited, a:active {
   color: var(--fg);
   text-decoration: none;
-}
-
-hr {
-  color: var(--fg-alt);
-  border-style: solid;
 }
